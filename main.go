@@ -26,7 +26,7 @@ func projectsHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func techHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Technology", ""}
+	data := pagedata{"Technology", Stack}
 	templates.ExecuteTemplate(w, "tech.html", data)
 }
 

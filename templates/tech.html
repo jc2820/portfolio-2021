@@ -5,6 +5,18 @@
     {{template "header"}}
     <section class="container">
       <h1>Technology</h1>
+      <div class="stack-box">
+        {{ range $key, $value := .Content }}
+        <div class="stack-category">
+          <h2>{{ $key }}</h2>
+          {{ range $value }}
+          <ul>
+            <li>{{.}}</li>
+          </ul>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
     </section>
   </body>
 </html>

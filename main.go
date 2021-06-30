@@ -8,24 +8,25 @@ import (
 	"os"
 )
 
-type Pagedata struct {
-	Title string
+type pagedata struct {
+	Title   string
+	Content interface{}
 }
 
 var templates *template.Template
 
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
-	data := Pagedata{"About Me"}
+	data := pagedata{"About Me", ""}
 	templates.ExecuteTemplate(w, "about.html", data)
 }
 
 func projectsHandler(w http.ResponseWriter, r *http.Request) {
-	data := Pagedata{"Selected Projects"}
+	data := pagedata{"Selected Projects", Projects}
 	templates.ExecuteTemplate(w, "projects.html", data)
 }
 
 func techHandler(w http.ResponseWriter, r *http.Request) {
-	data := Pagedata{"Technology"}
+	data := pagedata{"Technology", ""}
 	templates.ExecuteTemplate(w, "tech.html", data)
 }
 

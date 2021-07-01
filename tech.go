@@ -9,13 +9,42 @@ var Design = []string{"Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", 
 var Testing = []string{"Jest", "React Testing Library", "Codecov"}
 var Methodologies = []string{"Agile", "Scrum", "TDD", "Accessibility", "Prototyping", "Pair Programming"}
 
-var Stack = map[string][]string{
-	"Languages":                Languages,
-	"Libraries and Frameworks": LibsFrameworks,
-	"Databases":                Databases,
-	"CI/CD":                    Cicd,
-	"Tools":                    Tools,
-	"Design":                   Design,
-	"Testing":                  Testing,
-	"Methodologies":            Methodologies,
+type category struct {
+	Categorytitle string
+	Categorylist  []string
+}
+
+var Stack = []category{
+	{
+		"Languages",
+		Languages,
+	},
+	{
+		"Libraries and Frameworks",
+		LibsFrameworks,
+	},
+	{
+		"Databases",
+		Databases,
+	},
+	{
+		"CI/CD",
+		Cicd,
+	},
+	{
+		"Tools",
+		Tools,
+	},
+	{
+		"Design",
+		Design,
+	},
+	{
+		"Testing",
+		Testing,
+	},
+	{
+		"Methodologies",
+		Methodologies,
+	},
 }

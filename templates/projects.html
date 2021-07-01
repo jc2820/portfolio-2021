@@ -13,11 +13,23 @@
         <div class="project-text-box">
           <h2>{{ .Title }}</h2>
           <p>{{ .Description }}</p>
-          <p>Built with: {{ .Stack }}</p>
-          <p>
-            <a href="{{ .Url }}" target="_blank" rel="noopener noreferrer">Link</a> //
-            <a href="{{ .Codebase }}" target="_blank" rel="noopener noreferrer"> Codebase</a>
-          </p>
+          <br />
+          <div>
+            <p>Built with: {{ .Stack }}</p>
+            <p>
+              <a href="{{ .Url }}" target="_blank" rel="noopener noreferrer"
+                >Link</a
+              >
+              //
+              <a
+                href="{{ .Codebase }}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Codebase</a
+              >
+            </p>
+          </div>
         </div>
       </article>
       {{ end }}

@@ -45,7 +45,7 @@ ul {
 }
 
 img {
-    width: 100%;
+    width: 22vw;
     height: auto;
 }
 
@@ -101,9 +101,10 @@ header h1 {
 }
 
 .project-text-box {
+    width: 44vw;
     display: flex;
     flex-direction: column;
-    margin-left: 25px;
+    padding-left: 25px;
 }
 
 .project-links-box {

@@ -1,13 +1,13 @@
 package main
 
-var Languages = []string{"Semantic HTML", "CSS", "Javascript (ES5+)", "Go"}
+var Languages = []string{"Semantic HTML", "CSS", "Javascript (ES6+)", "Go"}
 var LibsFrameworks = []string{"NodeJS", "npm", "React", "Express", "Next", "Gatsby", "Styled Components", "Firebase"}
 var Databases = []string{"Postgresql", "Firestore", "Airtable"}
-var Cicd = []string{"Netlify", "Heroku", "Vercel", "Github", "Travis"}
+var Cicd = []string{"Netlify", "Heroku", "Vercel", "Github", "TravisCI"}
 var Tools = []string{"Miro", "HackMD", "Figma"}
 var Design = []string{"Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Adobe Premier"}
 var Testing = []string{"Jest", "React Testing Library", "Codecov"}
-var Methodologies = []string{"Agile", "Scrum", "TDD", "Accessibility", "Prototyping", "Pair Programming"}
+var Methodologies = []string{"Agile", "Scrum", "TDD", "Accessibility", "Responsive Design", "Prototyping", "Pair Programming"}
 
 type category struct {
 	Categorytitle string
@@ -20,7 +20,7 @@ var Stack = []category{
 		Languages,
 	},
 	{
-		"Libraries and Frameworks",
+		"Libraries & Frameworks",
 		LibsFrameworks,
 	},
 	{

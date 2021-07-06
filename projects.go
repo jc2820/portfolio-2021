@@ -60,7 +60,7 @@ var Projects = []project{
 	},
 	{
 		"My Best Life Phase 2: Chrome Extension Prototype",
-		"Created as part of My Best Life Phase 2. This prototype is a chrome extension that provides a popup with helpful links to youth issues when conditions are met. The drop-down from the context menu is non-functional, but describes an area where users can log in to edit preferences, or add their own helpful links for others.",
+		"Created as part of My Best Life Phase 2. This prototype is a chrome extension that provides a popup with helpful links around youth issues when conditions are met in the page. The drop-down from the context menu is non-functional, but describes an area where users can log in to edit preferences, or add their own helpful links for others.",
 		"HTML, CSS, Javascript",
 		"",
 		"",
@@ -92,7 +92,7 @@ var Projects = []project{
 	},
 	{
 		"Reuse, Reduce, Recycle",
-		"A drag-and-drop game designed to teach kids about recycling and the environment. A Founders and Coders student selected project and introduction to Scrum methodology.",
+		"A drag-and-drop game designed to teach kids about recycling and the environment. A Founders and Coders student selected project and introduction to using the Scrum framework in practice.",
 		"React, Styled-Components, Drag and Drop with touch support, PWA, TravisCI, Codecov, Jest, Netlify",
 		"",
 		"",

@@ -25,9 +25,9 @@ func projectsHandler(w http.ResponseWriter, r *http.Request) {
 	templates.ExecuteTemplate(w, "projects.html", data)
 }
 
-func techHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Technology", Stack}
-	templates.ExecuteTemplate(w, "tech.html", data)
+func stackHandler(w http.ResponseWriter, r *http.Request) {
+	data := pagedata{"Tech Stack", Stack}
+	templates.ExecuteTemplate(w, "stack.html", data)
 }
 
 func main() {
@@ -43,7 +43,7 @@ func main() {
 	mux.Handle("/static/", http.StripPrefix("/static/", fs))
 	mux.HandleFunc("/", aboutHandler)
 	mux.HandleFunc("/projects", projectsHandler)
-	mux.HandleFunc("/technology", techHandler)
+	mux.HandleFunc("/stack", stackHandler)
 
 	fmt.Printf("Listening on %v\n", port)
 	log.Fatal(http.ListenAndServe(":"+port, mux))

@@ -18,10 +18,12 @@
             <p>Built with: {{ .Stack }}</p>
             <br />
             <p>
+              {{ if .Url }}
               <a href="{{ .Url }}" target="_blank" rel="noopener noreferrer"
                 >Link</a
               >
-              //
+              {{ end }} {{ if and .Url .Codebase }} // {{ end }} {{ if .Codebase
+              }}
               <a
                 href="{{ .Codebase }}"
                 target="_blank"
@@ -29,6 +31,7 @@
               >
                 Codebase</a
               >
+              {{ end }}
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ h1 {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
 } 
 
@@ -33,6 +33,7 @@ p, li, a {
 
 a {
     text-decoration: none;
+    font-weight: 700;
 }
 
 a:hover {
@@ -96,7 +97,6 @@ header h1 {
 
 .project-image-box {
     width: 22vw;
-    height: 11vw;
     border: none;
     margin: 0;
     padding: 0;

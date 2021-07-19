@@ -12,7 +12,7 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  opacity: 0.6;
 }
 
 ul {
@@ -80,6 +80,10 @@ header h1 {
 
 .nav-links li {
   margin-right: 25px;
+}
+
+.nav-active {
+  border-bottom: 2px solid white;
 }
 
 .container {

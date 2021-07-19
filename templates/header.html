@@ -3,9 +3,9 @@
   <h1>Jamie Carter</h1>
   <nav>
     <ul class="nav-links">
-      <li><a href="/">About</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/stack">Stack</a></li>
+      <li {{if eq .Title "About Me" }} class="nav-active" {{end}}><a href="/">About</a></li>
+      <li {{if eq .Title "Selected Projects" }} class="nav-active" {{end}}><a href="/projects">Projects</a></li>
+      <li {{if eq .Title "Tech Stack" }} class="nav-active" {{end}}><a href="/stack">Stack</a></li>
     </ul>
   </nav>
 </header>

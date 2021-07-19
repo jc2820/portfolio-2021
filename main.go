@@ -30,6 +30,13 @@ func stackHandler(w http.ResponseWriter, r *http.Request) {
 	templates.ExecuteTemplate(w, "stack.html", data)
 }
 
+func faviconHandler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "./favicon.ico")
+}
+func robotsHandler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "./robots.txt")
+}
+
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -44,6 +51,8 @@ func main() {
 	mux.HandleFunc("/", aboutHandler)
 	mux.HandleFunc("/projects", projectsHandler)
 	mux.HandleFunc("/stack", stackHandler)
+	mux.HandleFunc("/favicon.ico", faviconHandler)
+	mux.HandleFunc("/robots.txt", robotsHandler)
 
 	fmt.Printf("Listening on %v\n", port)
 	log.Fatal(http.ListenAndServe(":"+port, mux))

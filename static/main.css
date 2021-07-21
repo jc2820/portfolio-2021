@@ -16,7 +16,7 @@ h1 {
   margin: 0;
 }
 
-h2 {
+h2, legend {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-size: 0.8rem;
@@ -46,6 +46,14 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+fieldset {
+  border: 2px solid white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
 }
 
 img {
@@ -95,8 +103,8 @@ header h1 {
   margin: 6rem 0 9rem 11vw;
 }
 
-.about-paragraph {
-  margin: 25px 0 0 0;
+.about-box {
+  margin: 1rem 0;
 }
 
 .project-box {

@@ -1,6 +1,7 @@
 {{define "header"}}
 <header>
-  <h1>Jamie Carter</h1>
+  {{ $getFont := .RandomFont}}
+  <h1>{{ range .MyName }}<span class={{call $getFont}}>{{.}}</span>{{ end }}</h1>
   <nav>
     <ul class="nav-links">
       <li {{if eq .Title "About Me" }} class="nav-active" {{end}}><a href="/">About</a></li>

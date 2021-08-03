@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #356d9c;
+  background-color: #0061a1;
   margin: 0;
   padding: 0;
 }
@@ -14,6 +14,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0 0 25px 0;
+  /* letter-spacing: 1px; */
 }
 
 h2 {
@@ -60,7 +61,7 @@ img {
 header {
   width: 100vw;
   height: 4.5rem;
-  background-color: #356d9c;
+  background-color: #0061a1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -74,6 +75,26 @@ header {
 
 header h1 {
   margin: 0 0 0 25px;
+}
+
+.class-one {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.class-two {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.class-three {
+  font-family: "Comic-sans", cursive;
+}
+
+.class-four {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.class-five {
+  font-family: fantasy;
 }
 
 .nav-links {
@@ -100,7 +121,7 @@ header h1 {
 }
 
 .about-box {
-  margin: 25px 0;
+  margin: 25px 0 0 0;
 }
 
 .project-box {
@@ -157,7 +178,7 @@ header h1 {
   header {
     width: 100vw;
     height: 6rem;
-    background-color: #356d9c;
+    background-color: #0061a1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

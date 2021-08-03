@@ -9,24 +9,27 @@ import (
 )
 
 type pagedata struct {
-	Title   string
-	Content interface{}
+	Title      string
+	Content    interface{}
+	RandomFont func() string
+	MyName     []string
 }
 
 var templates *template.Template
+var Name = []string{"J", "a", "m", "i", "e", " ", "C", "a", "r", "t", "e", "r"}
 
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"About Me", ""}
+	data := pagedata{"About Me", "", getRandomFontClass, Name}
 	templates.ExecuteTemplate(w, "about.html", data)
 }
 
 func projectsHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Selected Projects", Projects}
+	data := pagedata{"Selected Projects", Projects, getRandomFontClass, Name}
 	templates.ExecuteTemplate(w, "projects.html", data)
 }
 
 func stackHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Tech Stack", Stack}
+	data := pagedata{"Tech Stack", Stack, getRandomFontClass, Name}
 	templates.ExecuteTemplate(w, "stack.html", data)
 }
 

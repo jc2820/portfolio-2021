@@ -9,33 +9,32 @@ import (
 )
 
 type pagedata struct {
-	Title      string
-	Content    interface{}
-	RandomFont func() string
-	MyName     []string
+	Title        string
+	Content      interface{}
+	HeadingMaker HeadingMaker
 }
 
 var templates *template.Template
-var Name = []string{"J", "a", "m", "i", "e", " ", "C", "a", "r", "t", "e", "r"}
 
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"About Me", "", getRandomFontClass, Name}
+	data := pagedata{"About Me", "", HeadingMaker{HeaderH1, AboutH1, getRandomFontClass}}
 	templates.ExecuteTemplate(w, "about.html", data)
 }
 
 func projectsHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Selected Projects", Projects, getRandomFontClass, Name}
+	data := pagedata{"Selected Projects", Projects, HeadingMaker{HeaderH1, ProjectsH1, getRandomFontClass}}
 	templates.ExecuteTemplate(w, "projects.html", data)
 }
 
 func stackHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Tech Stack", Stack, getRandomFontClass, Name}
+	data := pagedata{"Tech Stack", Stack, HeadingMaker{HeaderH1, StackH1, getRandomFontClass}}
 	templates.ExecuteTemplate(w, "stack.html", data)
 }
 
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./favicon.ico")
 }
+
 func robotsHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./robots.txt")
 }

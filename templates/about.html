@@ -4,7 +4,8 @@
   <body>
     {{template "header" .}}
     <section class="container">
-      <h1>About Me</h1>
+      {{ $getRandomFont := .HeadingMaker.FontRandomiser }}
+      <h1>{{ range .HeadingMaker.PageHeading }}<span class={{ call $getRandomFont }}>{{.}}</span>{{ end }}</h1>
 
       <article class="about-box">
         <h2>I'm a full-stack Javascript Developer</h2>

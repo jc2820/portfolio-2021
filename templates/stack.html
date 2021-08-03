@@ -4,7 +4,8 @@
   <body>
     {{template "header" .}}
     <section class="container">
-      <h1>Tech stack</h1>
+      {{ $getRandomFont := .HeadingMaker.FontRandomiser }}
+      <h1>{{ range .HeadingMaker.PageHeading }}<span class={{ call $getRandomFont }}>{{.}}</span>{{ end }}</h1>
       <div class="stack-box">
         {{ range .Content }}
         <div class="stack-category">

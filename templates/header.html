@@ -1,7 +1,6 @@
 {{define "header"}}
 <header>
-  {{ $getRandomFont := .HeadingMaker.FontRandomiser }}
-  <h1>{{ range .HeadingMaker.MainHeading }}<span class={{ call $getRandomFont }}>{{.}}</span>{{ end }}</h1>
+  <h1>Jamie Carter</h1>
   <nav>
     <ul class="nav-links">
       <li {{if eq .Title "About Me" }} class="nav-active" {{end}}><a href="/">About</a></li>

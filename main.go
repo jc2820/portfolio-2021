@@ -9,25 +9,24 @@ import (
 )
 
 type pagedata struct {
-	Title        string
-	Content      interface{}
-	HeadingMaker HeadingMaker
+	Title   string
+	Content interface{}
 }
 
 var templates *template.Template
 
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"About Me", "", HeadingMaker{HeaderH1, AboutH1, getRandomFontClass}}
+	data := pagedata{"About Me", ""}
 	templates.ExecuteTemplate(w, "about.html", data)
 }
 
 func projectsHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Selected Projects", Projects, HeadingMaker{HeaderH1, ProjectsH1, getRandomFontClass}}
+	data := pagedata{"Selected Projects", Projects}
 	templates.ExecuteTemplate(w, "projects.html", data)
 }
 
 func stackHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Tech Stack", Stack, HeadingMaker{HeaderH1, StackH1, getRandomFontClass}}
+	data := pagedata{"Tech Stack", Stack}
 	templates.ExecuteTemplate(w, "stack.html", data)
 }
 

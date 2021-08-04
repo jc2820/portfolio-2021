@@ -12,9 +12,10 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-size: 1.5rem;
+  margin: 0 0 10px 0;
   font-weight: 400;
-  margin: 0 0 25px 0;
   letter-spacing: 1px;
+  font-style: italic;
 }
 
 h2 {
@@ -75,26 +76,7 @@ header {
 
 header h1 {
   margin: 0 0 0 25px;
-}
-
-.class-one {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.class-two {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.class-three {
-  font-family: "Comic-sans", cursive;
-}
-
-.class-four {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.class-five {
-  font-family: fantasy;
+  font-style: normal;
 }
 
 .nav-links {
@@ -121,7 +103,7 @@ header h1 {
 }
 
 .about-box {
-  margin: 25px 0 0 0;
+  margin: 25px 0 10px 0;
 }
 
 .project-box {

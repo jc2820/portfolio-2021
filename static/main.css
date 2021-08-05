@@ -3,9 +3,22 @@
 }
 
 body {
-  background-color: #0061a1;
+  /* background-color: #0061a1; */
+  background: linear-gradient(to bottom, #0061a1, #FA709A );
+	background-size: 100%;
+	background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+}
+
+body:before{
+	content:'';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0), #0061a1 90%);
 }
 
 h1 {
@@ -22,7 +35,8 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-style: italic;
   margin-top: 0;
 }
 

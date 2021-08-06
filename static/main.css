@@ -82,7 +82,7 @@ nav {
   justify-content: flex-start;
   align-items: flex-end;
   margin: 0;
-  padding: 25px;
+  padding: 50px 25px 25px 25px;
   position: fixed;
   top: 0;
   left: 0;
@@ -112,7 +112,7 @@ nav h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 25px;
+  padding: 50px 25px 100px 25px;
   margin: 0 0 0 20vw;
 }
 

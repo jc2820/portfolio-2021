@@ -1,11 +1,11 @@
 package main
 
 var Languages = []string{"Javascript (ES6+)", "Go", "Semantic HTML", "CSS"}
-var LibsFrameworks = []string{"NodeJS", "npm", "React", "Express", "Next", "Gatsby", "Styled Components", "Firebase"}
+var Libraries = []string{"NodeJS", "npm", "React", "Express", "Next", "Gatsby", "Styled Components", "Firebase"}
 var Databases = []string{"Postgresql", "Firestore", "Airtable"}
 var Cicd = []string{"Netlify", "Heroku", "Vercel", "Github", "TravisCI"}
 var Tools = []string{"Miro", "HackMD", "Figma"}
-var Design = []string{"Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Adobe Premier"}
+var Design = []string{"Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Adobe Premiere"}
 var Testing = []string{"Jest", "React Testing Library", "Codecov"}
 var Methodologies = []string{"Agile", "Scrum", "TDD", "Accessibility", "Responsive Design", "Prototyping", "Pair Programming"}
 
@@ -20,8 +20,8 @@ var Stack = []category{
 		Languages,
 	},
 	{
-		"Libraries & Frameworks",
-		LibsFrameworks,
+		"Libraries",
+		Libraries,
 	},
 	{
 		"Databases",

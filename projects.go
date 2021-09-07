@@ -47,15 +47,15 @@ var proProjects = []project{
 	},
 	{
 		"My Best Life Phase 2: Chrome Extension Prototype",
-		"Created as part of My Best Life Phase 2. This prototype is a chrome extension that provides a popup with helpful links around youth issues when conditions are met in the page. The drop-down from the context menu is non-functional, but describes an area where users can log in to edit preferences, or add their own helpful links for others.",
-		"HTML, CSS, Javascript",
+		"Created as part of 'My Best Life' Phase 2. This prototype is a chrome extension that provides a popup with helpful links around youth issues when conditions are met in the page. The drop-down from the context menu is non-functional, but describes an area where users can log in to edit preferences, or add their own helpful links for others.",
+		"HTML, CSS, Javascript, Google Chrome",
 		"",
 		"https://github.com/jc2820/mbl-popup",
 		"/static/images/mbl-popup.png",
 	},
 	{
 		"Just Like Us",
-		"Part of the Catalyst Dev-2A programme. LGBT+ charity Just Like Us required a team to research, prototype and user test resource database and LMS services for their new website.",
+		"Part of the Catalyst 'Dev-2A' programme. LGBT+ charity Just Like Us required a team to research, prototype and user test resource database and LMS services for their new website.",
 		"Miro, Figma Thinkific LMS, Learndash LMS, Wordpress, HackMD",
 		"https://hackmd.io/@sienna/rydPvsrl_",
 		"",
@@ -63,7 +63,7 @@ var proProjects = []project{
 	},
 	{
 		"Catalyst Discovery Learning Programme",
-		"As part of a team from Founders and Coders, and a digital partner on Catalyst's Discovery Learning Programme, we led nine charities through the discovery process of digital service design.",
+		"As part of a team from Founders and Coders, and a digital partner on Catalyst's 'Discovery Learning Programme', we led nine charities through the discovery process of digital service design.",
 		"Zoom, Miro, Gitbook",
 		"",
 		"",
@@ -98,7 +98,7 @@ var personalProjects = []project{
 	},
 	{
 		"Discord Timecop",
-		"A response to those friends who say they'll be '5 minutes' but are always more. The Timecop bot waits on several variations of a given time to wait in group chat messages, and replies with a stern reminder when that time is up.",
+		"A response to those friends who say they'll be 'just 5 minutes' but are always more. The Timecop bot waits on several variations of a given time to wait in group chat messages, and replies with a stern reminder when that time is up.",
 		"Discord, Javascript, NodeJs",
 		"",
 		"https://github.com/jc2820/discord-timecop",
@@ -109,7 +109,7 @@ var personalProjects = []project{
 var facProjects = []project{
 	{
 		"Reuse, Reduce, Recycle",
-		"A drag-and-drop game designed to teach kids about recycling and the environment. A Founders and Coders student selected project and introduction to using the Scrum framework in practice.",
+		"A drag-and-drop game designed for tablets to teach kids about recycling and the environment. A Founders and Coders student selected project and introduction to using the Scrum framework in practice.",
 		"React, Styled-Components, Drag and Drop with touch support, PWA, TravisCI, Codecov, Jest, Netlify",
 		"https://reduce-reuse-recycle.netlify.app/",
 		"https://github.com/jc2820/recycling-game",

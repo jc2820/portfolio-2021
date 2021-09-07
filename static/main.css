@@ -132,6 +132,9 @@ nav h1 {
 }
 
 .project-image-box {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 22vw;
   border: none;
   margin: 0;

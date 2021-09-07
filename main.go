@@ -21,7 +21,7 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func projectsHandler(w http.ResponseWriter, r *http.Request) {
-	data := pagedata{"Selected Projects", Projects}
+	data := pagedata{"Selected Projects", AllProjects}
 	templates.ExecuteTemplate(w, "projects.html", data)
 }
 

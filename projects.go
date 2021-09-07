@@ -9,7 +9,18 @@ type project struct {
 	Imagepath   string
 }
 
-var Projects = []project{
+type projectCategory struct {
+	CategoryTitle string
+	Projects      []project
+}
+
+var AllProjects = []projectCategory{
+	{"Selected Projects: Professional", proProjects},
+	{"Selected Projects: Personal", personalProjects},
+	{"Selected Projects: Founders and Coders", facProjects},
+}
+
+var proProjects = []project{
 	{
 		"al-redux",
 		"A portfolio website for 3D artist Alex Jackson. New posts to each page can be made by an admin via Netlify CMS. Updates trigger a fresh static rebuild using NextJS.",
@@ -25,6 +36,22 @@ var Projects = []project{
 		"https://siennadev.com",
 		"https://github.com/sienna-development/sienna-website",
 		"/static/images/sienna.png",
+	},
+	{
+		"CyberSafe Tool for Schools",
+		"Made for charity CyberSafeKids, the Tool for Schools is a survey app aimed at Irish schools. By surveying a strata of school leaders, Teachers and Pupils through the app, CyberSafeKids are able to provide reports and advice on how a school can improve their 'CyberSafety' and provide a mark that schools can display on their comms material.",
+		"Gatsby, React, Firebase (Firestore and Auth), Netlify Lambda Functions, Netlify CMS",
+		"https://cybersafetoolforschools.ie",
+		"https://github.com/cybersafe-dev/cybersafety-tool",
+		"/static/images/toolforschools.png",
+	},
+	{
+		"My Best Life Phase 2: Chrome Extension Prototype",
+		"Created as part of My Best Life Phase 2. This prototype is a chrome extension that provides a popup with helpful links around youth issues when conditions are met in the page. The drop-down from the context menu is non-functional, but describes an area where users can log in to edit preferences, or add their own helpful links for others.",
+		"HTML, CSS, Javascript",
+		"",
+		"https://github.com/jc2820/mbl-popup",
+		"/static/images/mbl-popup.png",
 	},
 	{
 		"Just Like Us",
@@ -43,38 +70,6 @@ var Projects = []project{
 		"/static/images/dlp.png",
 	},
 	{
-		"CyberSafe Tool for Schools",
-		"Made for charity CyberSafeKids, the Tool for Schools is a survey app aimed at Irish schools. By surveying a strata of school leaders, Teachers and Pupils through the app, CyberSafeKids are able to provide reports and advice on how a school can improve their 'CyberSafety' and provide a mark that schools can display on their comms material.",
-		"Gatsby, React, Firebase (Firestore and Auth), Netlify Lambda Functions, Netlify CMS",
-		"https://cybersafetoolforschools.ie",
-		"https://github.com/cybersafe-dev/cybersafety-tool",
-		"/static/images/toolforschools.png",
-	},
-	{
-		"NodeJs Speedtest",
-		"A personal project that came from concern about regular drops in my home internet speed. While running locally, this app uses a cron job to test download speed at a set interval, storing the results in a local database. Views allow results to be separated according to different speed thresholds.",
-		"NodeJs, Express, EJS templates, Postgresql, Bootstrap",
-		"",
-		"https://github.com/jc2820/nodejs-speedtest",
-		"/static/images/nodejs-speedtest.png",
-	},
-	{
-		"My Best Life Phase 2: Chrome Extension Prototype",
-		"Created as part of My Best Life Phase 2. This prototype is a chrome extension that provides a popup with helpful links around youth issues when conditions are met in the page. The drop-down from the context menu is non-functional, but describes an area where users can log in to edit preferences, or add their own helpful links for others.",
-		"HTML, CSS, Javascript",
-		"",
-		"https://github.com/jc2820/mbl-popup",
-		"/static/images/mbl-popup.png",
-	},
-	{
-		"Discord Timecop",
-		"A response to those friends who say they'll be '5 minutes' but are always more. The Timecop bot waits on several variations of a given time to wait in group chat messages, and replies with a stern reminder when that time is up.",
-		"Discord, Javascript, NodeJs",
-		"",
-		"https://github.com/jc2820/discord-timecop",
-		"/static/images/discord-timecop.png",
-	},
-	{
 		"CyberSafe Family Quiz",
 		"Created for Irish charity CyberSafeKids, the family quiz was originally created for an event called 'Cyberbreak' in partnership with Irish bank PTSB and later adapted for more general use. A short quiz returns families tips on how to improve their cyber-awareness, and allows CyberSafeKids a simple UI through Airtable to analyse results.",
 		"React, Netlify Lambda Functions, Airtable",
@@ -90,6 +85,28 @@ var Projects = []project{
 		"https://github.com/FAC-CDT/resource-centre",
 		"/static/images/resource-centre.png",
 	},
+}
+
+var personalProjects = []project{
+	{
+		"NodeJs Speedtest",
+		"A personal project that came from concern about regular drops in my home internet speed. While running locally, this app uses a cron job to test download speed at a set interval, storing the results in a local database. Views allow results to be separated according to different speed thresholds.",
+		"NodeJs, Express, EJS templates, Postgresql, Bootstrap",
+		"",
+		"https://github.com/jc2820/nodejs-speedtest",
+		"/static/images/nodejs-speedtest.png",
+	},
+	{
+		"Discord Timecop",
+		"A response to those friends who say they'll be '5 minutes' but are always more. The Timecop bot waits on several variations of a given time to wait in group chat messages, and replies with a stern reminder when that time is up.",
+		"Discord, Javascript, NodeJs",
+		"",
+		"https://github.com/jc2820/discord-timecop",
+		"/static/images/discord-timecop.png",
+	},
+}
+
+var facProjects = []project{
 	{
 		"Reuse, Reduce, Recycle",
 		"A drag-and-drop game designed to teach kids about recycling and the environment. A Founders and Coders student selected project and introduction to using the Scrum framework in practice.",

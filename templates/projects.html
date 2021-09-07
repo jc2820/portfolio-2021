@@ -5,11 +5,15 @@
     {{template "nav" .}}
 
     <section class="container">
-      <h1>Selected Projects</h1>
       {{ range .Content }}
+      <h1>{{ .CategoryTitle }}</h1>
+      {{ range .Projects }}
       <article class="project-box">
         <div class="project-image-box">
-          <img src="/static/images/desktop-bar.svg" alt="desktop style menu bar" />
+          <img
+            src="/static/images/desktop-bar.svg"
+            alt="desktop style menu bar"
+          />
           <img src="{{ .Imagepath }}" alt="{{ .Title }}" />
         </div>
         <div class="project-text-box">
@@ -38,7 +42,7 @@
           </div>
         </div>
       </article>
-      {{ end }}
+      {{ end }} {{ end }}
     </section>
   </body>
 </html>

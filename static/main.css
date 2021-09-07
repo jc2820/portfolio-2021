@@ -4,14 +4,15 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #ffffff, #FA709A );
+  background-color: #fffafa;
+  /* background: linear-gradient(to bottom, #ffffff, #FA709A ); */
 	background-size: 100%;
 	background-repeat: no-repeat;
   margin: 0;
   padding: 0;
 }
 
-body:before{
+/* body:before{
 	content:'';
 	position: fixed;
 	top: 0;
@@ -19,7 +20,7 @@ body:before{
 	width: 100%;
 	z-index: -1;
 	background: linear-gradient(to right bottom, rgba(255,255,255,0), #ffffff 90%);
-}
+} */
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -35,14 +36,13 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #333333;
   font-size: 0.8rem;
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 700;
+  font-style: bold;
   margin-top: 0;
 }
 
 p,
-li,
-a {
+li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
   color: #333333;
@@ -50,6 +50,10 @@ a {
 }
 
 a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  color: #7b8cda;
+  margin: 0;
   text-decoration: none;
   font-weight: 700;
 }
@@ -66,6 +70,7 @@ ul {
 
 li a {
   font-weight: 400;
+  color: #333333;
 }
 
 img {

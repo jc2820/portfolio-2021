@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #00b318;
+  color: #333333;
   font-size: 0.8rem;
   font-weight: 700;
   font-style: italic;
@@ -38,7 +38,7 @@ li {
 a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
-  color: #324fd3;
+  color: #333333;
   margin: 0;
   text-decoration: none;
   font-weight: 700;

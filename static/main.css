@@ -5,30 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-.background {
-  min-height: 100vh;
-  min-width: 100vw;
-  background: url(/static/images/gits.webp) no-repeat;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.background::after {
-  content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background: rgba(127, 127, 127, 0.6);
-	background-image: radial-gradient(black 30%, transparent 11%);
-	background-size: 2px 2px;
+  background-color: #f0f0f0;
 }
 
 h1 {
@@ -200,7 +177,7 @@ nav h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 1rem;
     position: fixed;

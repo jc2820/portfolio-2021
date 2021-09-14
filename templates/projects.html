@@ -2,47 +2,49 @@
 <html lang="en">
   {{template "head" .}}
   <body>
-    <div class="background"></div>
     {{template "nav" .}}
     <section class="container">
       {{ range .Content }}
-      <h1>{{ .CategoryTitle }}</h1>
-      {{ range .Projects }}
-      <article class="project-box">
-        <div class="project-image-box">
-          <img
-            src="/static/images/desktop-bar.svg"
-            alt="desktop style menu bar"
-          />
-          <img src="{{ .Imagepath }}" alt="{{ .Title }}" />
-        </div>
-        <div class="project-text-box">
-          <h2>{{ .Title }}</h2>
-          <p>{{ .Description }}</p>
-          <br />
-          <div>
-            <p>Built with: {{ .Stack }}</p>
-            <br />
-            <p>
-              {{ if .Url }}
-              <a href="{{ .Url }}" target="_blank" rel="noopener noreferrer"
-                >Link</a
-              >
-              {{ end }} {{ if and .Url .Codebase }} // {{ end }} {{ if .Codebase
-              }}
-              <a
-                href="{{ .Codebase }}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Codebase</a
-              >
-              {{ end }}
-            </p>
+      <div class="project-category-box">
+        <h1>{{ .CategoryTitle }}</h1>
+        {{ range .Projects }}
+        <article class="project-box">
+          <div class="project-image-box">
+            <img
+              src="/static/images/desktop-bar.svg"
+              alt="desktop style menu bar"
+            />
+            <img src="{{ .Imagepath }}" alt="{{ .Title }}" />
           </div>
-        </div>
-      </article>
-      {{ end }} {{ end }}
+          <div class="project-text-box">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Description }}</p>
+            <br />
+            <div>
+              <p>Built with: {{ .Stack }}</p>
+              <br />
+              <p>
+                {{ if .Url }}
+                <a href="{{ .Url }}" target="_blank" rel="noopener noreferrer"
+                  >Link</a
+                >
+                {{ end }} {{ if and .Url .Codebase }} // {{ end }} {{ if
+                .Codebase }}
+                <a
+                  href="{{ .Codebase }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Codebase</a
+                >
+                {{ end }}
+              </p>
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
     </section>
   </body>
 </html>

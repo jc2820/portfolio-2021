@@ -116,6 +116,10 @@ nav h1 {
   margin: 25px 0 10px 0;
 }
 
+.project-category-box {
+  margin: 0 0 3rem 0;
+}
+
 .project-box {
   display: flex;
   flex-direction: row;

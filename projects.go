@@ -15,9 +15,9 @@ type projectCategory struct {
 }
 
 var AllProjects = []projectCategory{
-	{"Selected Projects: Professional", proProjects},
-	{"Selected Projects: Personal", personalProjects},
-	{"Selected Projects: Founders and Coders", facProjects},
+	{"Selected Projects // Professional", proProjects},
+	{"Selected Projects // Personal", personalProjects},
+	{"Selected Projects // Founders and Coders", facProjects},
 }
 
 var proProjects = []project{

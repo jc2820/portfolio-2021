@@ -116,6 +116,10 @@ nav h1 {
   margin: 25px 0 10px 0;
 }
 
+.about-box p {
+  margin-bottom: 1rem;
+}
+
 .project-category-box {
   margin: 0 0 3rem 0;
 }

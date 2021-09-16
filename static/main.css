@@ -121,6 +121,10 @@ nav h1 {
   margin-bottom: 0.8rem;
 }
 
+.emoji {
+  font-size: 1.2rem;
+}
+
 .project-category-box {
   margin: 0 0 3rem 0;
 }

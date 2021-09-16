@@ -23,7 +23,7 @@ var AllProjects = []projectCategory{
 var proProjects = []project{
 	{
 		"al-redux",
-		"A portfolio website for 3D artist Alex Jackson. New posts to each page can be made by an admin via Netlify CMS. Updates trigger a fresh static rebuild using NextJS.",
+		"A portfolio website for 3D artist Alex Jackson.",
 		"React, Next, Netlify CMS",
 		"https://al-redux.com",
 		"https://github.com/al-jackson/al-redux",
@@ -31,7 +31,7 @@ var proProjects = []project{
 	},
 	{
 		"Sienna",
-		"A portfolio website for Sienna bringing together projects that Bethany Scott and I have worked on together since graduating from Founders and Coders. We began using the name Sienna in late 2020 with the aim of formalising our collaboration on tech for good projects as an independent agency.",
+		"A portfolio website for Sienna bringing together projects that Bethany Scott and I have worked on together during 2020 and 2021. We began using the name Sienna in late 2020 with the aim of formalising our collaboration on tech for good projects as an independent agency.",
 		"React, Next, Vercel, React-Canvas",
 		"https://siennadev.com",
 		"https://github.com/sienna-development/sienna-website",
@@ -39,7 +39,7 @@ var proProjects = []project{
 	},
 	{
 		"CyberSafe Tool for Schools",
-		"Made for charity CyberSafeKids, the Tool for Schools is a survey app aimed at Irish schools. By surveying a strata of school leaders, Teachers and Pupils through the app, CyberSafeKids are able to provide reports and advice on how a school can improve their 'CyberSafety' and provide a mark that schools can display on their comms material.",
+		"Made for charity CyberSafeKids, the Tool for Schools is a survey app aimed at Irish schools. By surveying a strata of school leaders, Teachers and Pupils through the app, CyberSafeKids are able to provide reports and advice on how a school can improve their 'CyberSafety'.",
 		"Gatsby, React, Firebase (Firestore and Auth), Netlify Lambda Functions, Netlify CMS",
 		"https://cybersafetoolforschools.ie",
 		"https://github.com/cybersafe-dev/cybersafety-tool",
@@ -55,7 +55,7 @@ var proProjects = []project{
 	},
 	{
 		"Just Like Us",
-		"Part of the Catalyst 'Dev-2A' programme. LGBT+ charity Just Like Us required a team to research, prototype and user test resource database and LMS services for their new website.",
+		"Part of the Catalyst 'Dev-2A' programme. Sienna helped LGBT+ charity Just Like Us to research, prototype and user test resource database and LMS services for their new website.",
 		"Miro, Figma Thinkific LMS, Learndash LMS, Wordpress, HackMD",
 		"https://hackmd.io/@sienna/rydPvsrl_",
 		"",
@@ -71,7 +71,7 @@ var proProjects = []project{
 	},
 	{
 		"CyberSafe Family Quiz",
-		"Created for Irish charity CyberSafeKids, the family quiz was originally created for an event called 'Cyberbreak' in partnership with Irish bank PTSB and later adapted for more general use. A short quiz returns families tips on how to improve their cyber-awareness, and allows CyberSafeKids a simple UI through Airtable to analyse results.",
+		"Created for CyberSafeKids, the family quiz was originally created for an event called 'Cyberbreak' in partnership with Irish bank PTSB and later adapted for more general use. A short quiz returns families tips on how to improve their cyber-awareness, and allows CyberSafeKids a simple UI through Airtable to analyse results.",
 		"React, Netlify Lambda Functions, Airtable",
 		"https://cyberbreak.ie/",
 		"https://github.com/cybersafe-dev/cyberbreak",
@@ -79,7 +79,7 @@ var proProjects = []project{
 	},
 	{
 		"Collaborative Digital Training: Resource Centre",
-		"An MVP created as part of a Founders and Coders collaboration with CAST as part of COVID-19 response. Working with Product Owners from two non-profits this programme aimed to be a model for upskilling charities through practical workshops in designing and building digital services that collaboratively tackle .",
+		"An MVP created as part of a Founders and Coders collaboration with CAST as COVID-19 response. CDT aimed to investigate the viability of a collaborative approach to upskilling charities in product management and digital service design.",
 		"React, Netlify Lambda Functions, Airtable",
 		"https://cdt-resourcecentre.netlify.app/",
 		"https://github.com/FAC-CDT/resource-centre",
@@ -90,7 +90,7 @@ var proProjects = []project{
 var personalProjects = []project{
 	{
 		"NodeJs Speedtest",
-		"A personal project that came from concern about regular drops in my home internet speed. While running locally, this app uses a cron job to test download speed at a set interval, storing the results in a local database. Views allow results to be separated according to different speed thresholds.",
+		"Resulting from suspicion about regular drops in my home internet speed. While running locally, this app uses a cron job to test download speed at a set interval, storing the results in a local database. Views allow results to be separated according to different speed thresholds.",
 		"NodeJs, Express, EJS templates, Postgresql, Bootstrap",
 		"",
 		"https://github.com/jc2820/nodejs-speedtest",
@@ -98,7 +98,7 @@ var personalProjects = []project{
 	},
 	{
 		"Discord Timecop",
-		"A response to those friends who say they'll be 'just 5 minutes' but are always more. The Timecop bot waits on several variations of a given time to wait in group chat messages, and replies with a stern reminder when that time is up.",
+		"A response for friends who always say they'll be 'just 5 minutes'. The Timecop bot waits on several variations of a given time to wait in group chat messages, and replies with a stern reminder when that time is up.",
 		"Discord, Javascript, NodeJs",
 		"",
 		"https://github.com/jc2820/discord-timecop",
@@ -109,7 +109,7 @@ var personalProjects = []project{
 var facProjects = []project{
 	{
 		"Reuse, Reduce, Recycle",
-		"A drag-and-drop game designed for tablets to teach kids about recycling and the environment. A Founders and Coders student selected project and introduction to using the Scrum framework in practice.",
+		"A drag-and-drop, tablet-first game designed to teach kids about recycling and the environment. A Founders and Coders student selected project and introduction to using the Scrum framework in practice.",
 		"React, Styled-Components, Drag and Drop with touch support, PWA, TravisCI, Codecov, Jest, Netlify",
 		"https://reduce-reuse-recycle.netlify.app/",
 		"https://github.com/jc2820/recycling-game",

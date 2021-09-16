@@ -81,6 +81,7 @@ nav {
 
 nav h1 {
   font-style: normal;
+  text-align: end;
 }
 
 .nav-links {
@@ -127,7 +128,7 @@ nav h1 {
 .project-box {
   display: flex;
   flex-direction: row;
-  margin: 25px 0;
+  margin: 3rem 0;
 }
 
 .project-image-box {
@@ -165,7 +166,7 @@ nav h1 {
   margin: 25px 25px 25px 0;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
   h2,
   p,
   li,

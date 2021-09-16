@@ -220,7 +220,7 @@ nav h1 {
   .project-box {
     display: flex;
     flex-direction: column;
-    margin: 25px 0;
+    margin: 1rem 0 6rem 0;
   }
 
   .project-image-box {

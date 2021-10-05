@@ -40,7 +40,7 @@ var proProjects = []project{
 	{
 		"CyberSafe Tool for Schools",
 		"Made for charity CyberSafeKids, the Tool for Schools is a survey app aimed at Irish schools. By surveying a strata of school leaders, Teachers and Pupils through the app, CyberSafeKids are able to provide reports and advice on how a school can improve their 'CyberSafety'.",
-		"Gatsby, React, Firebase (Firestore and Auth), Netlify Lambda Functions, Netlify CMS",
+		"Gatsby, React, Firebase (Firestore and Auth), Netlify Lambda Functions, Netlify CMS, Salesforce REST API",
 		"https://cybersafetoolforschools.ie",
 		"https://github.com/cybersafe-dev/cybersafety-tool",
 		"/static/images/toolforschools.png",
@@ -48,7 +48,7 @@ var proProjects = []project{
 	{
 		"My Best Life Phase 2: Chrome Extension Prototype",
 		"Created as part of 'My Best Life' Phase 2. This prototype is a chrome extension that provides a popup with helpful links around youth issues when conditions are met in the page. The drop-down from the context menu is non-functional, but describes an area where users can log in to edit preferences, or add their own helpful links for others.",
-		"HTML, CSS, Javascript, Google Chrome",
+		"HTML, CSS, JavaScript, Google Chrome",
 		"",
 		"https://github.com/jc2820/mbl-popup",
 		"/static/images/mbl-popup.png",
@@ -65,7 +65,7 @@ var proProjects = []project{
 		"Catalyst Discovery Learning Programme",
 		"As part of a team from Founders and Coders, and a digital partner on Catalyst's 'Discovery Learning Programme', we led nine charities through the discovery process of digital service design.",
 		"Zoom, Miro, Gitbook",
-		"",
+		"https://founders-and-coders.gitbook.io/pm-curriculum/",
 		"",
 		"/static/images/dlp.png",
 	},
@@ -91,7 +91,7 @@ var personalProjects = []project{
 	{
 		"NodeJs Speedtest",
 		"Resulting from suspicion about regular drops in my home internet speed. While running locally, this app uses a cron job to test download speed at a set interval, storing the results in a local database. Views allow results to be separated according to different speed thresholds.",
-		"NodeJs, Express, EJS templates, Postgresql, Bootstrap",
+		"Node.js, Express, EJS templates, Postgresql, Bootstrap",
 		"",
 		"https://github.com/jc2820/nodejs-speedtest",
 		"/static/images/nodejs-speedtest.png",
@@ -99,7 +99,7 @@ var personalProjects = []project{
 	{
 		"Discord Timecop",
 		"A response for friends who always say they'll be 'just 5 minutes'. The Timecop bot waits on several variations of a given time to wait in group chat messages, and replies with a stern reminder when that time is up.",
-		"Discord, Javascript, NodeJs",
+		"Discord, JavaScript, Node.js",
 		"",
 		"https://github.com/jc2820/discord-timecop",
 		"/static/images/discord-timecop.png",

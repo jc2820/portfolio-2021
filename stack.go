@@ -1,7 +1,7 @@
 package main
 
-var Languages = []string{"Javascript (ES6+)", "Go", "Semantic HTML", "CSS"}
-var Libraries = []string{"NodeJS", "npm", "React", "Express", "Next", "Gatsby", "Styled Components", "Firebase"}
+var Languages = []string{"JavaScript (ES6+)", "Go", "Semantic HTML", "CSS"}
+var Libraries = []string{"Node.js", "npm", "React", "Express", "Next", "Gatsby", "Styled Components", "Firebase"}
 var Databases = []string{"Postgresql", "Firestore", "Airtable"}
 var Cicd = []string{"Netlify", "Heroku", "Vercel", "Github", "TravisCI"}
 var Tools = []string{"Miro", "HackMD", "Figma"}

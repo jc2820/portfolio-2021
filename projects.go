@@ -89,6 +89,14 @@ var proProjects = []project{
 
 var personalProjects = []project{
 	{
+		"Go JWT & Cookies",
+		"Implementing a very basic web app to try out JWT based authorisation via cookie storage for a private route using Go.",
+		"Go",
+		"",
+		"https://github.com/jc2820/gocookies",
+		"/static/images/gojwtcookies.png",
+	},
+	{
 		"NodeJs Speedtest",
 		"Resulting from suspicion about regular drops in my home internet speed. While running locally, this app uses a cron job to test download speed at a set interval, storing the results in a local database. Views allow results to be separated according to different speed thresholds.",
 		"Node.js, Express, EJS templates, Postgresql, Bootstrap",

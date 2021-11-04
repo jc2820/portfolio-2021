@@ -89,6 +89,14 @@ var proProjects = []project{
 
 var personalProjects = []project{
 	{
+		"FileCrypt",
+		"A command line file encryption program with options to encrypt and decrypt files as well as amend text to files without requirement for decryption as a separate job.",
+		"Go",
+		"",
+		"https://github.com/jc2820/filecrypt",
+		"/static/images/cmd.png",
+	},
+	{
 		"Go JWT & Cookies",
 		"Implementing a very basic web app to try out JWT based authorisation via cookie storage for a private route using Go.",
 		"Go",
